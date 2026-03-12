@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>iPhone Repair Price List</title>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+<img src="assets/logo.jpeg" alt="Reji Tech Logo" class="logo">
+<h1>Reji Tech</h1>
+<p>Select your model and service</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<label>Choose iPhone Model</label>
+
+<select id="model">
+<option value="">-- Select Model --</option>
+<option>iPhone 8</option>
+<option>iPhone 8 Plus</option>
+<option>iPhone X</option>
+<option>iPhone XR</option>
+<option>iPhone XS</option>
+<option>iPhone XS Max</option>
+<option>iPhone 11</option>
+<option>iPhone 11 Pro</option>
+<option>iPhone 11 Pro Max</option>
+<option>iPhone 12</option>
+<option>iPhone 12 Mini</option>
+<option>iPhone 12 Pro</option>
+<option>iPhone 12 Pro Max</option>
+<option>iPhone 13</option>
+<option>iPhone 13 Mini</option>
+<option>iPhone 13 Pro</option>
+<option>iPhone 13 Pro Max</option>
+<option>iPhone 14</option>
+<option>iPhone 14 Plus</option>
+<option>iPhone 14 Pro</option>
+<option>iPhone 14 Pro Max</option>
+<option>iPhone 15</option>
+<option>iPhone 15 Plus</option>
+<option>iPhone 15 Pro</option>
+<option>iPhone 15 Pro Max</option>
+</select>
+
+
+<label>Choose Service</label>
+
+<select id="service">
+<option value="">-- Select Service --</option>
+<option value="LCD Replacement">LCD Replacement</option>
+<option value="Battery Replacement">Battery Replacement</option>
+</select>
+
+
+<div id="priceDisplay">
+Estimated Price: -
+</div>
+
+<button onclick="sendWhatsapp()">Contact via WhatsApp</button>
+
+</div>
+
+
+
+<div class="card request">
+
+<h2>Model Not Listed?</h2>
+
+<input type="text" id="customModel" placeholder="Enter your phone model">
+
+<textarea id="customIssue" placeholder="Describe your issue"></textarea>
+
+<button onclick="sendCustomRequest()">Request via WhatsApp</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+<footer>
+<p>&copy; 2024 Reji Tech. All rights reserved.</p>
+</html>
